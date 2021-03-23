@@ -86,9 +86,9 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label4.Location = new System.Drawing.Point(1, 91);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 20);
+            this.label4.Size = new System.Drawing.Size(43, 20);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Metin";
+            this.label4.Text = "Text";
             // 
             // label5
             // 
@@ -96,9 +96,9 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label5.Location = new System.Drawing.Point(1, 139);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(134, 20);
+            this.label5.Size = new System.Drawing.Size(110, 20);
             this.label5.TabIndex = 4;
-            this.label5.Text = "Şifrelenmiş Hali";
+            this.label5.Text = "Crypted Text";
             // 
             // label6
             // 
@@ -106,9 +106,9 @@
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label6.Location = new System.Drawing.Point(1, 193);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(137, 20);
+            this.label6.Size = new System.Drawing.Size(130, 20);
             this.label6.TabIndex = 5;
-            this.label6.Text = "Çözümleniş Hali";
+            this.label6.Text = "Decrypted Text";
             // 
             // btnSifre
             // 
@@ -119,7 +119,7 @@
             this.btnSifre.Name = "btnSifre";
             this.btnSifre.Size = new System.Drawing.Size(75, 23);
             this.btnSifre.TabIndex = 6;
-            this.btnSifre.Text = "Şifrele";
+            this.btnSifre.Text = "Crypt";
             this.btnSifre.UseVisualStyleBackColor = false;
             this.btnSifre.Click += new System.EventHandler(this.btnSifre_Click);
             // 
@@ -132,7 +132,7 @@
             this.btnCoz.Name = "btnCoz";
             this.btnCoz.Size = new System.Drawing.Size(75, 23);
             this.btnCoz.TabIndex = 7;
-            this.btnCoz.Text = "Çöz";
+            this.btnCoz.Text = "Decrypt";
             this.btnCoz.UseVisualStyleBackColor = false;
             this.btnCoz.Click += new System.EventHandler(this.btnCoz_Click);
             // 

@@ -9,7 +9,7 @@ When you press crypt the crypted text will be in "Crypted Text".
 
 Also if you want to decrypt a crypted text,
 Write crypted text in "Crypted Text",
-Then click "Decrypt"i
+Then click "Decrypt",
 The decrypted text will be in the "Decrypted Text".
 
 # Our Discord

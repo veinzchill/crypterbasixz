@@ -1,7 +1,6 @@
 C:\Users\ege20\source\repos\BasixzCrypter\BasixzCrypter\bin\Debug\BasixzCrypter.exe.config
 C:\Users\ege20\source\repos\BasixzCrypter\BasixzCrypter\bin\Debug\BasixzCrypter.exe
 C:\Users\ege20\source\repos\BasixzCrypter\BasixzCrypter\bin\Debug\BasixzCrypter.pdb
-C:\Users\ege20\source\repos\BasixzCrypter\BasixzCrypter\obj\Debug\BasixzCrypter.csprojAssemblyReference.cache
 C:\Users\ege20\source\repos\BasixzCrypter\BasixzCrypter\obj\Debug\BasixzCrypter.Form1.resources
 C:\Users\ege20\source\repos\BasixzCrypter\BasixzCrypter\obj\Debug\BasixzCrypter.Properties.Resources.resources
 C:\Users\ege20\source\repos\BasixzCrypter\BasixzCrypter\obj\Debug\BasixzCrypter.csproj.GenerateResource.cache

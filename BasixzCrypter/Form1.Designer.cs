@@ -44,6 +44,9 @@
             this.label8 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.hashText = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -159,6 +162,7 @@
             this.txtCozum.BackColor = System.Drawing.Color.White;
             this.txtCozum.Location = new System.Drawing.Point(144, 195);
             this.txtCozum.Name = "txtCozum";
+            this.txtCozum.ReadOnly = true;
             this.txtCozum.Size = new System.Drawing.Size(179, 20);
             this.txtCozum.TabIndex = 10;
             // 
@@ -200,12 +204,45 @@
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
             this.panel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseUp);
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label9.Location = new System.Drawing.Point(187, 342);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(146, 15);
+            this.label9.TabIndex = 14;
+            this.label9.Text = "Come to our Discord !";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
+            // 
+            // hashText
+            // 
+            this.hashText.Location = new System.Drawing.Point(68, 45);
+            this.hashText.Name = "hashText";
+            this.hashText.Size = new System.Drawing.Size(181, 20);
+            this.hashText.TabIndex = 15;
+            this.hashText.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label10.Location = new System.Drawing.Point(1, 45);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(51, 20);
+            this.label10.TabIndex = 16;
+            this.label10.Text = "Hash";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(335, 366);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.hashText);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtCozum);
@@ -247,6 +284,9 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox hashText;
+        private System.Windows.Forms.Label label10;
     }
 }
 

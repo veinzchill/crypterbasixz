@@ -33,21 +33,43 @@ namespace BasixzCrypter
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (label8.ForeColor == Color.Crimson) label8.ForeColor = Color.Black;
-            else label8.ForeColor = Color.Crimson;
+            if (label8.ForeColor == Color.Crimson)
+            {
+                label8.ForeColor = Color.Black;
+                label8.Text = "veinz ❤️ Luna"
+                ;
+            }
+            else
+            {
+                label8.ForeColor = Color.Crimson;
+                label8.Text = "veinz ❤️ Basixz";
+            }
         }
         string hash = "b4s1xz";
         private void btnSifre_Click(object sender, EventArgs e)
         {
-            byte[] data = UTF8Encoding.UTF8.GetBytes(txtMetin.Text);
-            using (MD5CryptoServiceProvider md5 = new MD5CryptoServiceProvider())
+            if (txtMetin.Text == "")
             {
-                byte[] keys = md5.ComputeHash(UTF8Encoding.UTF8.GetBytes(hash));
-                using (TripleDESCryptoServiceProvider tripDes = new TripleDESCryptoServiceProvider() { Key = keys, Mode = CipherMode.ECB, Padding = PaddingMode.PKCS7 })
+                MessageBox.Show("The 'text field' cannot be empty. Please fill it then try again.");
+                return;
+            }
+            else if (txtMetin.Text == "luna")
+            {
+                MessageBox.Show("Bu kişi buraya yazılamayacak kadar değerli lütfen tekrar denemeyiniz");
+                return;
+            }
+            else
+            {
+                byte[] data = UTF8Encoding.UTF8.GetBytes(txtMetin.Text);
+                using (MD5CryptoServiceProvider md5 = new MD5CryptoServiceProvider())
                 {
-                    ICryptoTransform transform = tripDes.CreateEncryptor();
-                    byte[] results = transform.TransformFinalBlock(data, 0, data.Length);
-                    txtSifre.Text = Convert.ToBase64String(results, 0, results.Length);
+                    byte[] keys = md5.ComputeHash(UTF8Encoding.UTF8.GetBytes(hash));
+                    using (TripleDESCryptoServiceProvider tripDes = new TripleDESCryptoServiceProvider() { Key = keys, Mode = CipherMode.ECB, Padding = PaddingMode.PKCS7 })
+                    {
+                        ICryptoTransform transform = tripDes.CreateEncryptor();
+                        byte[] results = transform.TransformFinalBlock(data, 0, data.Length);
+                        txtSifre.Text = Convert.ToBase64String(results, 0, results.Length);
+                    }
                 }
             }
         }
@@ -57,6 +79,11 @@ namespace BasixzCrypter
             if(txtSifre.Text == "")
             {
                 MessageBox.Show("Crypted text cannot be empty! Please write your crypted text or if you want to crypt a text, write your text in text.");
+                return;
+            }
+            else if (txtMetin.Text == "luna")
+            {
+                MessageBox.Show("Bu kişi buraya yazılamayacak kadar değerli lütfen tekrar denemeyiniz");
                 return;
             }
             else
@@ -99,6 +126,16 @@ namespace BasixzCrypter
         private void panel1_MouseUp(object sender, MouseEventArgs e)
         {
             mousedown = false;
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://discord.gg/pjSEpTU");
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            hash = hashText.Text;
         }
     }
 }

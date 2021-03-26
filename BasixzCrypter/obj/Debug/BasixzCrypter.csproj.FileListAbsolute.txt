@@ -7,3 +7,4 @@ C:\Users\ege20\source\repos\BasixzCrypter\BasixzCrypter\obj\Debug\BasixzCrypter.
 C:\Users\ege20\source\repos\BasixzCrypter\BasixzCrypter\obj\Debug\BasixzCrypter.csproj.CoreCompileInputs.cache
 C:\Users\ege20\source\repos\BasixzCrypter\BasixzCrypter\obj\Debug\BasixzCrypter.exe
 C:\Users\ege20\source\repos\BasixzCrypter\BasixzCrypter\obj\Debug\BasixzCrypter.pdb
+C:\Users\ege20\source\repos\BasixzCrypter\BasixzCrypter\obj\Debug\BasixzCrypter.csprojAssemblyReference.cache
